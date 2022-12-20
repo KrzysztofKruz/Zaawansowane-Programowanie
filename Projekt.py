@@ -1,7 +1,7 @@
 import cv2
 path = r'C:\Users\student\Desktop\Project\people1.jpg'
 image = cv2.imread(path)
-image = cv2.resize(image,(400,400))
+image = cv2.resize(image,(300,300))
 
 Czy_czlowiek = cv2.HOGDescriptor()
 # To jest: Histogram zorientowanych gradientów
