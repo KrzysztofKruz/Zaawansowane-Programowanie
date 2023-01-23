@@ -1,6 +1,5 @@
 import cv2
-path = r'C:\Users\student\Desktop\Project\people1.jpg'
-image = cv2.imread(path)
+imgage = cv.imread('Zdjecia/Ludzie1.jpg')
 image = cv2.resize(image,(300,300))
 
 Czy_czlowiek = cv2.HOGDescriptor()
