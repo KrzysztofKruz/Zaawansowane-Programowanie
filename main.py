@@ -1,3 +1,3 @@
-import zadanie1
-import zadanie2
-import zadanie3
+import zad_1
+import zad_2
+import zad_3
