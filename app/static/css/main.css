@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    background-color: #151213;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-family: consolas;
+}
+
+.container-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4px;
+    width: 50%;
+}
+
+.title {
+    font-size: 22px;
+    width: 80%;
+    padding: 0 0 4px 4px;
+    border-bottom: 1px solid white;
+}
+
+.menu {
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+}
+
+.menu > a {
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 8px;
+    color: #bc1c24;
+    transition: all .3s ease-in-out;
+}
+
+.menu > a:hover {
+    text-shadow: 0 0 16px #bc1c24;
+}
+
+.menu > a:visited {
+    color: #bc1c24;
+}
+
+.container-data {
+    background-color: #000000;
+    border: 1px solid white;
+    padding: 16px;
+    width: 640px;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+.container-data > table {
+    width: 100%;
+    border-spacing: 0 3px;
+}
+
+.container-data > table > tbody > tr > th {
+    padding: 0 0 4px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.data-row {
+    cursor: pointer;
+    padding: 8px 8px 8px 0;
+    border-bottom: 1px solid #ffffff;
+    transition: all .3s ease-in-out;
+}
+
+.data-row:hover {
+    color: #000000;
+    background-color: #6d1e24;
+}
