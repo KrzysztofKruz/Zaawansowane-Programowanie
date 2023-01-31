@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+    {% if display == True %}
+        <div class="container-data">
+            {% for row in data %}
+                <p class="data-row"> {{ row }} </p>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>
+            To jest strona główna aplikacji wykonanej na laboratorium numer 8
+        </p>
+    {% endif %}
+{% endblock %}
