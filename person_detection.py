@@ -1,5 +1,5 @@
 import cv2
-imgage = cv.imread('Zdjecia/Ludzie1.jpg')
+image = cv2.imread('Zdjecia/Ludzie1.jpg')
 image = cv2.resize(image,(300,300))
 
 Czy_czlowiek = cv2.HOGDescriptor()
