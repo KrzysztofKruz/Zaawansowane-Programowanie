@@ -1,20 +1,19 @@
-import statistics as s
-
-
 class Student:
-    def __init__(self, name: str, marks: list[int]) -> None:
+    def __init__(self, name, marks):
         self.name = name
         self.marks = marks
 
     def is_passed(self):
-        number_mean = s.mean(self.marks)
-        if number_mean > 50:
+        if sum(self.marks)/len(self.marks) > 50:
             return True
-        return False
+        else:
+            return False
 
 
-obj_1 = Student("Janek", [50, 10000, 240])
-obj_2 = Student("Jan", [1, 1, 1])
+Student1 = Student("Tomasz", [56, 76, 42, 99, 99])
 
-print(obj_1.is_passed())
-print(obj_2.is_passed())
+Student2 = Student("Krzysztof", [12, 43, 65, 12, 11])
+
+Student1.is_passed()
+
+Student2.is_passed()
